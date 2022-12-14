@@ -16,3 +16,32 @@ let dados = [
 ]
 
 
+// for
+
+/*let dados = [
+    {
+        usuario: 'Cledson',
+        senha: 'dados'
+    },
+
+    {
+        usuario: 'Dannyel',
+        senha: 'dados1'
+    },
+
+    {
+        usuario: 'Lucas',
+        senha: 'dados2'
+    }
+]
+
+let users = []
+let password = []
+
+
+
+
+dados.forEach(element => {
+
+    console.log(element.usuario )
+});*/

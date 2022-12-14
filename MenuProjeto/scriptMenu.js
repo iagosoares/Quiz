@@ -5,60 +5,65 @@ let Senha01 = document.getElementById("senha")
 
 // Eventos
 
-document.addEventListener('keypress', function (e) {
-    if(e.which === 13){
+/*document.addEventListener('keypress', function (e) {
+    if (e.which === 13) {
         if (Nome01.value === 'Nilton' && Senha01.value === '123') {
             window.location.href = "../Quiz/index.html"
-        } else if(Nome01.value === '' || Senha01.value === '' || Senha01.value != '123'){
-          alert("Opa, preencha os dados corretamente")
+        } else if (Nome01.value === '' || Senha01.value === '' || Senha01.value != '123') {
+            alert("Opa, preencha os dados corretamente")
         }
     }
 
-}, false);
+}, false);*/
 
 
 
 // Funções
 function validar() {
 
-    if (Nome01.value === 'Nilton' && Senha01.value === '123') {
+    let Nome01 = document.querySelector(".nome")
+    let Senha01 = document.getElementById("senha")
+
+    let result = dados.find((i) => (i.nome == Nome01.value && i.senha == Senha01.value));
+    console.log(result)
+    if (result) {
         window.location.href = "../Quiz/index.html"
-    } else if (Nome01.value === '' || Senha01.value === '') {
-        alert("Opa, preencha todo os campos")
-    } else if (Nome01.value != 'Nilton' || Senha01.value != '123') {
-        alert("Opa, os dados estão incorretos !")
+    } else {
+        alert("Dados incorretos")
     }
 }
 
 
-
-// for
-
+// Arrays 
 let dados = [
-    {
-        usuario: 'Cledson',
-        senha: 'dados'
-    },
 
-    {
-        usuario: 'Dannyel',
-        senha: 'dados1'
-    },
+    { nome: "Cledson", senha: "dados" },
+    { nome: "Dannyel", senha: "dados1" },
+    { nome: "Lucas", senha: "dados2" }
 
-    {
-        usuario: 'Lucas',
-        senha: 'dados2'
-    }
 ]
 
-let users = []
-let password = []
 
 
 
 
-dados.forEach(element => {
 
-    console.log(element.usuario )
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
