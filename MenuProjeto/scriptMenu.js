@@ -27,7 +27,7 @@ function validar() {
     let result = dados.find((i) => (i.nome == Nome01.value && i.senha == Senha01.value));
     console.log(result)
     if (result) {
-        window.location.href = "../Quiz/index.html"
+        window.location.href = '../Quiz/quiz.html'
     } else {
         alert("Dados incorretos")
     }
@@ -37,7 +37,7 @@ function validar() {
 // Arrays 
 let dados = [
 
-    { nome: "Cledson", senha: "dados" },
+    { nome: "teste", senha: "teste" },
     { nome: "Dannyel", senha: "dados1" },
     { nome: "Lucas", senha: "dados2" }
 
