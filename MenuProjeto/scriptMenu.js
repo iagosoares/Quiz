@@ -27,7 +27,7 @@ function validar() {
     let result = dados.find((i) => (i.nome == Nome01.value && i.senha == Senha01.value));
     console.log(result)
     if (result) {
-        window.location.href = '../Quiz/quiz.html'
+        window.location.href = '../cadPessoa/index.html'
     } else {
         alert("Dados incorretos")
     }
