@@ -28,9 +28,7 @@
         <div class="w3-container w3-bar w3-border navbar-main">
 
             <a href="./index.html" class="w3-bar-item w3-button w3-padding-24"><img src="./logo-triangular.png" alt="loho"
-                    srcset="" width="40rem"></a>
-            <a href="./pcadastro.html" class="w3-bar-item w3-button w3-padding-24">Cadastrar</a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-24">Consultar</a>
+                    srcset="" width="40rem"></a>            
 
         </div>
     </header>
@@ -49,42 +47,21 @@
             <div class="form">
                 <div class="container-form">
                     <div class="form-header">
-                        <h1>Novo Cadastro </h1>
-                        <button type="button" class="btn btn-outline-success" onclick="criaPessoa()"><a href="#">Salvar</a></button>
+                        <h1>Sistema Quiz </h1>
+                        <button type="button" class="btn btn-outline-success" onclick="validar()"><a href="#">Entrar</a></button>
 
 
                     </div>
                     <form action="#">
-                        <div class="input-box">
-
-                            <label for="input-name">Nome</label>
-                            <input type="text" id="input-name" placeholder="Digite seu nome completo" required>
-
-                            <label for="input-contato">Contato</label>
-                            <input type="tel" id="input-contato" placeholder="(DD) X XXXX - XXXX" required>
+                        <div class="input-box">                            
 
                             <label for="input-email">E-mail</label>
                             <input type="text" id="input-email" required>
 
-                            <div class="container-radio">
-                                <p>Status</p>
-                                <div class="input-radio">
+                            <label for="input-senha">Senha</label>
+                            <input type="password" id="input-senha" required>
 
-                                    <div class="item-radio">
-                                        <input type="radio" id="radio-ativo" name="radio-form" value="0"required>
-                                        <label for="radio-ativo">Ativo</label>
-                                        <input type="radio" id="radio-inativo" name="radio-form" value="1">
-                                        <label for="radio-inativo">Inativo</label>
-
-
-                                    </div>
-
-                                    
-                                </div>
-
-
-                            </div>
-
+                            
                         </div>
 
                     </form>
@@ -99,7 +76,8 @@
     </div>
 
 
-
+    <script src="scriptMenu.js"></script>
+    <script type="module" src="dados.js"></script>
 
 </body>
 
