@@ -6,15 +6,12 @@ let dados = [
 
 ]
 
-var login = document.getElementById("login");
-var senha = document.getElementById("senha")
-
 
 function validar() {
 
     let login = document.getElementById('login')
     let senha = document.getElementById('senha')
-    console.log(Nome01)
+    
 
     let result = dados.find((i) => (i.nome == login.value && i.senha == senha.value));
     console.log(result)

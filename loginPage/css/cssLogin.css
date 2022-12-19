@@ -8,6 +8,8 @@ body {
 }
 
 
+
+
 .container-main {
     margin-top: 0.8rem;
     width: 100%;
@@ -19,6 +21,7 @@ body {
 
 .navbar-main {
     background-color: blueviolet;
+    height: 5rem;
     color: white;
     display: flex;
     justify-content: initial;
@@ -38,13 +41,13 @@ body {
 
 
 .form-image {
-    width: 50%;
+    width: 30rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: blueviolet;
+    
     border-radius: 25px;
 }
 
@@ -74,6 +77,7 @@ body {
 
 .form-header button {
     border: none;
+    color: white;
     background-color: rgb(28, 175, 77);
     padding: 0.5rem;
     border-radius: 5px;
